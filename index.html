@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💧 미래 도시의 물 해결사 되기 | 개념 기반 탐구 수업</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <style>
+        /* 기본 폰트 및 군청색 텍스트 색상 설정 */
+        body {
+            font-family: 'Pretendard', sans-serif;
+            color: #1e3a8a; /* 군청색 계열 */
+        }
+        /* 네비게이션 활성 링크 스타일 */
+        .nav-active {
+            color: #0d9488; /* Teal-600 */
+            font-weight: 600;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-sky-50">
+
+    <nav id="navbar" class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg shadow-md transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <span class="text-3xl">💧</span>
+                    <a href="#" class="text-lg md:text-xl font-bold text-teal-800">미래 도시의 물 해결사</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <ul id="desktop-nav-links" class="flex items-center space-x-6 text-sm">
+                        </ul>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-lg py-4">
+            <ul id="mobile-nav-links" class="flex flex-col items-center space-y-4">
+                </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8 md:py-12">
+        
+        <header class="text-center my-8 md:my-12">
+            <h1 class="text-3xl md:text-5xl font-extrabold text-teal-900 leading-tight">
+                초등학교 4학년 과학 개념 기반 탐구 수업<br>
+                <span class="text-4xl md:text-6xl text-orange-500">"미래 도시의 물 해결사 되기"</span>
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-teal-700 max-w-3xl mx-auto">
+                물의 상태 변화 원리를 활용하여 미래의 물 부족 문제를 해결하는 창의적인 탐구 수업
+            </p>
+        </header>
+
+        <section id="core-concept" class="my-12 p-6 bg-teal-50 border-l-4 border-teal-500 rounded-r-lg shadow-lg">
+            <div class="flex items-center">
+                <span class="text-3xl mr-4">🔑</span>
+                <div>
+                    <h3 class="text-xl font-bold text-teal-800">핵심 개념</h3>
+                    <p class="mt-1 text-lg text-teal-900">'물질의 상태 변화와 그 활용'</p>
+                </div>
+            </div>
+            <p class="mt-3 pl-10 text-base">
+                단순히 물의 상태 변화(고체, 액체, 기체)를 아는 것을 넘어, 이 과학적 원리를 실제 생활 문제 해결에 어떻게 적용할 수 있을지 탐구하고 표현하는 고차원적 사고를 유도합니다.
+            </p>
+        </section>
+
+
+        <section id="achievement-standards" class="scroll-mt-20 my-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-teal-800 border-b-2 border-teal-200 pb-3 mb-6 flex items-center">
+                <span class="text-3xl mr-3">📜</span> 관련 성취기준 및 영역별 성취수준
+            </h2>
+            <div class="space-y-4">
+                <div class="accordion-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-header w-full text-left p-4 flex justify-between items-center bg-sky-100 hover:bg-sky-200 transition">
+                        <span class="font-semibold">[4과10-01] 우리 주변에서 물의 상태 변화 사례 찾기</span>
+                        <svg class="accordion-icon h-5 w-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </button>
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="p-4 border-t border-sky-200 text-base">
+                            <strong>지식･이해 (A 수준):</strong> 우리 주변에서의 물의 상태 변화 사례를 말하고, 그 특징을 설명할 수 있다.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-header w-full text-left p-4 flex justify-between items-center bg-sky-100 hover:bg-sky-200 transition">
+                        <span class="font-semibold">[4과10-02] 물의 상태 변화 현상 관찰하기</span>
+                         <svg class="accordion-icon h-5 w-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </button>
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="p-4 border-t border-sky-200 text-base">
+                           <strong>과정･기능 (A 수준):</strong> 실험을 통해 물이 얼 때와 얼음이 녹을 때, 물이 증발할 때와 끓을 때, 수증기가 응결할 때의 변화를 관찰하여 설명할 수 있다.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-header w-full text-left p-4 flex justify-between items-center bg-sky-100 hover:bg-sky-200 transition">
+                        <span class="font-semibold">[4과10-03] 물을 얻는 장치 설계 및 만들기</span>
+                         <svg class="accordion-icon h-5 w-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </button>
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="p-4 border-t border-sky-200 text-base space-y-2">
+                           <p><strong>과정･기능 (A 수준):</strong> 물의 상태 변화를 이용하여 물을 얻는 장치를 설계하고 제작할 수 있다.</p>
+                           <p><strong>가치･태도 (A 수준):</strong> 물 부족 문제의 심각성을 인식하고, 적극적인 자세로 문제 해결을 위해 노력한다.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="core-question" class="scroll-mt-20 my-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-teal-800 border-b-2 border-teal-200 pb-3 mb-6 flex items-center">
+                <span class="text-3xl mr-3">❓</span> 핵심 질문 (Core Question)
+            </h2>
+             <div class="my-8 p-6 bg-orange-100 border-l-4 border-orange-500 rounded-r-lg shadow-lg">
+                <p class="text-lg md:text-xl font-semibold text-orange-900">
+                    "미래 시대에 예상되는 물 부족 문제를 해결하기 위해<br class="hidden sm:block"> 물의 상태 변화 원리를 어떻게 활용할 수 있을까?"
+                </p>
+                 <p class="mt-3 text-base">
+                    이 질문은 학생들이 단순한 사실 확인을 넘어 고차원적 사고를 통해 다양한 해결 방안을 모색하도록 유도하며, 학습한 개념을 새로운 상황에 전이시킬 수 있게 합니다.
+                </p>
+            </div>
+        </section>
+
+        <section id="lesson-process" class="scroll-mt-20 my-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-teal-800 border-b-2 border-teal-200 pb-3 mb-8 flex items-center">
+                <span class="text-3xl mr-3">🚀</span> 개념 기반 탐구 수업 과정
+            </h2>
+            <div class="space-y-12">
+                
+                <div id="step-1" class="scroll-mt-20 p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-sky-800 flex items-center">
+                        <span class="bg-sky-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 font-mono">1</span>
+                        문제 인식 및 질문 형성 (질문이 살아있는 수업)
+                    </h3>
+                    <ul class="mt-4 space-y-2 pl-4">
+                        <li class="flex items-start"><span class="mr-2 text-orange-500">✅</span> <strong>활동:</strong> 미래 사회의 모습에 대한 상상 토론 (예: 2050년의 지구, 기후 변화) 및 물 부족 문제 관련 시청각 자료 제시</li>
+                        <li class="flex items-start"><span class="mr-2 text-orange-500">✅</span> <strong>학생 활동:</strong> 미래 물 부족 상황에 대해 <strong>"왜?", "어떻게?", "무엇을?"</strong> 과 같은 질문을 스스로 생성하고 공유</li>
+                    </ul>
+                </div>
+
+                <div id="step-2" class="scroll-mt-20 p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-sky-800 flex items-center">
+                        <span class="bg-sky-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 font-mono">2</span>
+                        개념 탐구 및 원리 이해 (탐구하는 수업)
+                    </h3>
+                    <div class="mt-4 p-4 bg-gray-50 rounded-md">
+                        <p class="font-semibold mb-2">🔬 활동 1: 물의 상태 변화 실험 탐구</p>
+                        <ul class="list-disc list-inside space-y-1 text-base">
+                            <li>물이 얼 때와 얼음이 녹을 때의 무게와 부피 변화 실험</li>
+                            <li>물이 증발할 때와 끓을 때 나타나는 현상 관찰 실험</li>
+                            <li>수증기가 응결할 때 나타나는 현상 관찰 실험 (예: 찬 컵 표면 물방울)</li>
+                        </ul>
+                    </div>
+                    <ul class="mt-4 space-y-2 pl-4">
+                        <li class="flex items-start"><span class="mr-2 text-orange-500">✅</span> <strong>학생 활동:</strong> 실험 현상을 관찰하고, 가설을 세워 원리를 추론 및 기록. 무게와 부피 변화를 직접 측정하고 비교하며 과학적 사실 습득</li>
+                    </ul>
+                </div>
+                
+                <div id="step-3" class="scroll-mt-20 p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-sky-800 flex items-center">
+                         <span class="bg-sky-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 font-mono">3</span>
+                        개념 적용 및 해결 방안 모색 (문제 해결하는 수업)
+                    </h3>
+                     <div class="mt-4 p-4 bg-gray-50 rounded-md">
+                        <p class="font-semibold mb-2">💡 활동 2: '미래 물 공급 장치' 아이디어 구상 및 설계</p>
+                        <ul class="list-disc list-inside space-y-1 text-base">
+                           <li><strong>(상상)</strong> 공기 중 수증기를 물로 바꾸는 장치, 오염된 물 정화 장치 등 창의적 아이디어 구상</li>
+                           <li><strong>(구체화)</strong> 그룹별로 아이디어를 모아 설계도를 그리고, 작동 원리 상세히 작성</li>
+                        </ul>
+                    </div>
+                    <ul class="mt-4 space-y-2 pl-4">
+                        <li class="flex items-start"><span class="mr-2 text-orange-500">✅</span> <strong>학생 활동:</strong> 토의를 통해 아이디어를 다듬고, 물의 상태 변화 원리가 장치에 어떻게 적용될지 과학적으로 분석</li>
+                    </ul>
+                </div>
+
+                <div class="my-12 flex flex-col md:flex-row items-center justify-around gap-4 text-center">
+                    <div class="flex flex-col items-center p-4">
+                        <div class="text-5xl mb-2">💡</div>
+                        <p class="font-bold">아이디어 구상</p>
+                    </div>
+                    <div class="text-4xl text-sky-300 transform rotate-90 md:rotate-0">➡️</div>
+                    <div class="flex flex-col items-center p-4">
+                        <div class="text-5xl mb-2">📐</div>
+                        <p class="font-bold">장치 설계</p>
+                    </div>
+                    <div class="text-4xl text-sky-300 transform rotate-90 md:rotate-0">➡️</div>
+                    <div class="flex flex-col items-center p-4">
+                        <div class="text-5xl mb-2">🛠️</div>
+                        <p class="font-bold">모형 제작</p>
+                    </div>
+                    <div class="text-4xl text-sky-300 transform rotate-90 md:rotate-0">➡️</div>
+                     <div class="flex flex-col items-center p-4">
+                        <div class="text-5xl mb-2">📢</div>
+                        <p class="font-bold">발표 및 공유</p>
+                    </div>
+                </div>
+
+                 <div id="step-4" class="scroll-mt-20 p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-sky-800 flex items-center">
+                         <span class="bg-sky-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 font-mono">4</span>
+                        자기 생각 표현 및 공유 (자기 생각을 잘 표현하는 수업)
+                    </h3>
+                    <div class="mt-4 p-4 bg-gray-50 rounded-md">
+                        <p class="font-semibold mb-2">📢 활동 3: '미래 물 공급 장치' 모형 제작 및 발표</p>
+                         <ul class="list-disc list-inside space-y-1 text-base">
+                           <li>설계도를 바탕으로 재활용품을 활용하여 모형 제작</li>
+                           <li>자신의 아이디어, 적용된 과학 원리, 문제 해결 효과 등을 설득력 있게 표현 (말, 그림, 글)</li>
+                        </ul>
+                    </div>
+                    <ul class="mt-4 space-y-2 pl-4">
+                        <li class="flex items-start"><span class="mr-2 text-orange-500">✅</span> <strong>학생 활동:</strong> 다른 조의 아이디어에 대해 질문하고 피드백을 주고받으며, 서로의 창의적인 해결책을 존중하는 태도 함양</li>
+                    </ul>
+                </div>
+
+                <div id="step-5" class="scroll-mt-20 p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-sky-800 flex items-center">
+                        <span class="bg-sky-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 font-mono">5</span>
+                        성찰 및 학습 전이 (깊이 있는 사고)
+                    </h3>
+                     <ul class="mt-4 space-y-2 pl-4">
+                        <li class="flex items-start"><span class="mr-2 text-orange-500">✅</span> <strong>활동:</strong> <span class="font-bold">'물 부족 문제를 해결하기 위해 내가 할 수 있는 일은 무엇일까?'</span>를 중심으로 자기 성찰 보고서 작성</li>
+                        <li class="flex items-start"><span class="mr-2 text-orange-500">✅</span> <strong>학생 활동:</strong> 학습한 개념이 다른 환경 문제(공기 오염, 에너지 절약 등) 해결에 어떻게 전이될 수 있을지 생각하고, 일상 속 실천 방안 다짐</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="text-center py-6 bg-teal-800 text-white text-sm mt-16">
+        <p>&copy; 2025 Gemini Education. All Rights Reserved.</p>
+        <p>본 콘텐츠는 교육 목적으로 제작되었습니다.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- 1. 네비게이션 동적 생성 ---
+            const headings = document.querySelectorAll('main h2, main h3');
+            const desktopNavLinks = document.getElementById('desktop-nav-links');
+            const mobileNavLinks = document.getElementById('mobile-nav-links');
+
+            const emojiMap = {
+                '성취기준': '📜',
+                '질문': '❓',
+                '수업 과정': '🚀',
+                '1단계': '👣',
+                '2단계': '👣',
+                '3단계': '👣',
+                '4단계': '👣',
+                '5단계': '👣',
+                '기본': '🔹'
+            };
+
+            headings.forEach(heading => {
+                const id = heading.id;
+                if (!id) return;
+
+                const text = heading.textContent.trim().replace(/^\d+\s/, '');
+                const emoji = Object.keys(emojiMap).find(key => text.includes(key)) ? emojiMap[Object.keys(emojiMap).find(key => text.includes(key))] : emojiMap['기본'];
+                
+                const linkHTML = `
+                    <li>
+                        <a href="#${id}" class="nav-link transition-colors duration-300 hover:text-teal-600 ${heading.tagName === 'H3' ? 'pl-4' : ''}">
+                            ${emoji} ${text}
+                        </a>
+                    </li>
+                `;
+                desktopNavLinks.innerHTML += linkHTML;
+                mobileNavLinks.innerHTML += linkHTML;
+            });
+
+            // --- 2. 네비게이션 스크롤 감지 및 활성화 ---
+            const sections = Array.from(headings).map(h => document.getElementById(h.id));
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('nav-active');
+                            if (link.getAttribute('href').substring(1) === entry.target.id) {
+                                link.classList.add('nav-active');
+                            }
+                        });
+                    }
+                });
+            }, { rootMargin: '-50% 0px -50% 0px', threshold: 0 });
+
+            sections.forEach(section => {
+                if (section) observer.observe(section);
+            });
+
+            // --- 3. 모바일 메뉴 토글 ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            // 모바일 메뉴 링크 클릭 시 메뉴 닫기
+            mobileNavLinks.addEventListener('click', () => {
+                 mobileMenu.classList.add('hidden');
+            });
+
+            // --- 4. 아코디언 기능 ---
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                const content = item.querySelector('.accordion-content');
+                const icon = item.querySelector('.accordion-icon');
+
+                header.addEventListener('click', () => {
+                    // 모든 아이템을 닫고 아이콘을 원래대로 돌림 (선택사항)
+                    // accordionItems.forEach(otherItem => {
+                    //    if (otherItem !== item) {
+                    //        otherItem.querySelector('.accordion-content').style.maxHeight = '0px';
+                    //        otherItem.querySelector('.accordion-icon').classList.remove('rotate-180');
+                    //    }
+                    // });
+
+                    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                        content.style.maxHeight = '0px';
+                        icon.classList.remove('rotate-180');
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
